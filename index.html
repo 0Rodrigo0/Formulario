@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+
+    <style>
+      body {
+        background-color: black;
+      }
+
+      section {
+        width: 95vw;
+        height: 93vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .image {
+        width: 940px;
+        height: 650px;
+      }
+
+      .login {
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: absolute;
+        margin-bottom: 30%;
+      }
+
+      .fundo-formulario {
+        position: absolute;
+        border-radius: 2rem;
+        width: 500px;
+        height: 500px;
+        background-color: rgb(224, 218, 218);
+        opacity: 50%;
+      }
+
+      .formulario {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <img
+          class="image"
+          src="https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt=""
+        />
+        <div class="fundo-formulario"></div>
+        <div class="formulario">
+          <div id="cadastro">
+            <form method="post" action="">
+              <h1>Cadastro</h1>
+              <p>
+                <label for="nome_cad">
+                  <img src="user-circle.svg" alt="" />
+                </label>
+                <input
+                  id="nome_cad"
+                  name="nome_cad"
+                  required="required"
+                  type="text"
+                  placeholder="nome"
+                />
+              </p>
+
+              <p>
+                <label for="email_cad"><img src="mail.svg" alt="" /></label>
+                <input
+                  id="email_cad"
+                  name="email_cad"
+                  required="required"
+                  type="email"
+                  placeholder="contato@htmlecsspro.com"
+                />
+              </p>
+
+              <p>
+                <label for="senha_cad"><img src="locked.svg" alt="" /></label>
+                <input
+                  id="senha_cad"
+                  name="senha_cad"
+                  required="required"
+                  type="password"
+                  placeholder="ex. 1234"
+                />
+              </p>
+
+              <p>
+                <input type="submit" value="Cadastrar" />
+              </p>
+
+              <p class="link">
+                Já tem conta?
+                <a href="#paralogin"> Ir para Login </a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
