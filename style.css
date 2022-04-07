@@ -79,6 +79,17 @@ form {
   box-shadow: 0 0 0.5em darkred;
 }
 
+.botao:hover {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(209, 202, 202);
+  border: none;
+  padding: 10px 10px;
+  border-radius: 25px;
+  background: rgba(182, 11, 11, 0.5);
+  box-shadow: 0 0 0.5em darkred;
+}
+
 input::placeholder {
   color: rgb(209, 202, 202);
 }
