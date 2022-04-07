@@ -112,3 +112,10 @@ input::placeholder {
   color: rgb(209, 202, 202);
   text-shadow: 0 0 0.5em darkblue;
 }
+
+.link {
+  font-size: 1rem;
+  color: rgb(209, 202, 202);
+  font-family: monospace;
+  text-shadow: 0 0 0.5em darkblue;
+}
